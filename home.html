@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240115210347">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header data-scroll="320" class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+
+					<a href="#" class="header__logo"><img src="img/logo/logo.svg" alt="logo"></a>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="#" class="menu__link">About us</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Services</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Job</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Contact </a></li>
+							<li class="menu__item"><a href="#" class="menu__link">News</a></li>
+						</ul>
+					</nav>
+					<div class="menu__buttons buttons-menu">
+						<div data-da=".menu__body, 767.98" class="buttons-menu__language">
+							<a href="#" class="buttons-menu__rus">Rus</a>
+							<a href="#" class="buttons-menu__Eng">Eng</a>
+						</div>
+						<a data-popup="#popup-login" href="#" class="buttons-menu__login">Log in</a>
+					</div>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<div id="popup-contact" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close">Закрити</button>
+					<div class="popup__text">
+						<h2 class="popup__title">Contact us</h2>
+						<form data-ajax class="contact__form" action="files/sendmail/sendmail.php" method="POST">
+
+							<div class="contact__top contact__top--popup">
+
+								<div class="contact__body-email"> <input data-error="Введен не верный E-mail" data-required="email" id="email-21" type="text" name="form[email]" data-error="Error" placeholder="contact@pavepo.com" class="input">
+									<div class="options">
+										<div class="options__item">
+											<input id="o_3" class="options__input" checked type="radio" value="1" name="option">
+											<label for="o_3" class="options__label"><span class="options__text">Email</span></label>
+										</div>
+										<div class="options__item">
+											<input id="o_4" class="options__input" type="radio" value="2" name="option">
+											<label for="o_4" class="options__label"><span class="options__text">Telegram</span></label>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="contact__body-name"><input data-required autocomplete="off" type="text" name="form[name]" data-error="Ошибка" placeholder="Paul" class="input">
+									<label>Name</label>
+								</div>
+
+
+
+							</div>
+
+							<div class="contact__bottom contact__bottom--popup">
+								<div class="contact__body-question">
+									<input data-required autocomplete="off" type="text" name="form[text]" data-error="Ошибка" placeholder="Write information about yourself" class="input">
+									<label>Describe</label>
+								</div>
+								<button type="submit" class="contact__button contact__button--popup">Send</button>
+							</div>
+
+
+
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="popup-login" aria-hidden="true" class="popup popup--login">
+
+			<div class="popup__wrapper popup__wrapper--login">
+				<div class="popup__content popup__content--login">
+					<div class="popup__container">
+						<header class="header">
+							<div class="header__container">
+								<div class="header__menu menu">
+
+									<a href="#" class="header__logo"><img src="img/logo/logo.svg" alt="logo"></a>
+									<nav class="menu__body">
+										<ul class="menu__list">
+											<li class="menu__item"><a href="#" class="menu__link">About us</a></li>
+											<li class="menu__item"><a href="#" class="menu__link">Services</a></li>
+											<li class="menu__item"><a href="#" class="menu__link">Job</a></li>
+											<li class="menu__item"><a href="#" class="menu__link">Contact </a></li>
+											<li class="menu__item"><a href="#" class="menu__link">News</a></li>
+										</ul>
+									</nav>
+									<div class="menu__buttons buttons-menu">
+										<div class="buttons-menu__language">
+											<a href="#" class="buttons-menu__rus">Rus</a>
+											<a href="#" class="buttons-menu__Eng">Eng</a>
+										</div>
+										<button data-close href="#" class="buttons-menu__login">Log in</button>
+									</div>
+									<button type="button" class="menu__icon icon-menu"><span></span></button>
+								</div>
+							</div>
+						</header>
+						<div class="popup-login">
+							<!-- <button data-close type="button" class="popup__close">Закрити</button> -->
+							<div class="popup__text popup-login__body">
+								<h2 class="popup-login__title popup__title">Welcome back</h2>
+								<p class="popup-login__text">Please enter your contact details to connect.</p>
+								<form data-ajax class="popup-login__form" action="files/sendmail/sendmail.php" method="POST">
+
+									<div class="popup-login__colum-email">
+										<label class="popup-login__label">Email address</label>
+										<input autocomplete="off" type="email" name="form[email-login]" data-error="Ошибка" placeholder="name@compagny.com" class="popup-login__input-email input">
+
+									</div>
+
+
+									<div class="popup-login__colum-password">
+										<label class="popup-login__label">Password</label>
+										<input autocomplete="off" type="Password" name="form[email-login]" data-error="Ошибка" placeholder="********" class="popup-login__input-password input">
+
+									</div>
+									<div class="popup-login__row-chek">
+
+										<div class="popup-login__colum-checkbox checkbox">
+											<input id="a_1" data-error="Ошибка" class="popup-login__input-checkbox   checkbox__input" type="checkbox" value="1" name="form[check]">
+											<label for="a_1" class="popup-login__label checkbox__label"><span class="checkbox__text">Remember
+													me</span></label>
+										</div>
+										<p class="popup-login__forgot"> Forgot password</p>
+									</div>
+
+
+									<button type="submit" class="popup-login__button">Log in</button>
+
+
+
+
+								</form>
+							</div>
+							<div class="popup-login__images"><picture><source srcset="img/hero/01.webp" type="image/webp"><img src="img/hero/01.png" alt="images"></picture></div>
+						</div>
+						<footer class="footer">
+							<div class="footer__container">
+								<div class="footer__logo">
+									<img src="img/logo/logo.svg" alt="logo">
+								</div>
+								<div class="footer__sochial-colum">
+									<a href="#" class="footer__sochial">Twitter</a>
+									<a href="#" class="footer__sochial">Telegram</a>
+									<a href="#" class="footer__sochial">Instagram</a>
+									<a href="#" class="footer__sochial">Vk</a>
+									<a href="#" class="footer__sochial">Privacy</a>
+									<a href="#" class="footer__sochial">Policy</a>
+								</div>
+								<div class="footer__email">
+									For additional questions
+									<a href="mailto:contact@pavepo.com">
+										contact@pavepo.com
+									</a>
+								</div>
+
+								<div class="footer__buttons">
+									<a data-popup="#popup-contact" href="#" class="footer__button">Contact us</a>
+								</div>
+							</div>
+						</footer>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<main class="page ">
+			<section class="page__hero hero">
+				<div class="hero__container">
+					<div class="hero__body">
+						<h1 class="hero__title">YOUR KEY</h1>
+						<p class="hero__text">tO TRANSFORMATION AND REACHING NEW HEIGHTS</p>
+					</div>
+					<div class="hero__video-body">
+
+						<video autoplay muted loop class="hero__video" preload="auto">
+							<source src="img/hero/02.mp4" type="video/mp4">
+							<source src="img/hero/02.webm" type="video/webm">
+						</video>
+					</div>
+
+					<!-- <div class="hero__images">
+						<picture><source srcset="img/hero/03.webp" type="image/webp"><img src="img/hero/03.jpg" alt=""></picture> 
+
+					</div> -->
+				</div>
+			</section>
+			<div class="page__number number">
+				<div class="number__container">
+					<div data-watch class="number__colum">
+						<div class="number__colum-simbol">
+							<h2 data-digits-counter class="number__title">170<span class="number__simbol">M+</span></h2>
+							<span class="number__simbol">M+</span>
+						</div>
+						<p class="number__text">Customers earn</p>
+					</div>
+					<div data-watch class="number__colum">
+						<h2 data-digits-counter class="number__title">84</h2>
+						<p class="number__text">Completed projects</p>
+					</div>
+					<div data-watch class="number__colum">
+						<h2 data-digits-counter class="number__title">58</h2>
+						<p class="number__text">Satisfied customers</p>
+					</div>
+				</div>
+			</div>
+			<div class="page__company company marquee ">
+				<!-- <div class="company__container">
+					<div>
+						<a href="#" class="company__title">CoinBase</a>
+						<a href="#" class="company__title">ExperJob</a>
+						<a href="#" class="company__title">WOSTAT</a>
+						<a href="#" class="company__title">SoilCTRL</a>
+						<a href="#" class="company__title">WOSTAT</a>
+						<a href="#" class="company__title">WOSTAT</a>
+						<a href="#" class="company__title">WOSTAT</a>
+					</div>
+
+				</div> -->
+
+				<div class="company__container">
+					<div class="marquee">
+						<div class="marquee__group">
+							<span>CoinBase</span>
+							<span>ExperJob</span>
+							<span>WOSTAT</span>
+							<span>SoilCTRL</span>
+							<span>WOSTAT</span>
+							<span>WOSTAT</span>
+							<span>WOSTAT</span>
+						</div>
+						<div class="marquee__group" aria-hidden="true">
+							<span>CoinBase</span>
+							<span>ExperJob</span>
+							<span>WOSTAT</span>
+							<span>SoilCTRL</span>
+							<span>WOSTAT</span>
+							<span>WOSTAT</span>
+							<span>WOSTAT</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section class="page__about about">
+				<div class="about__container">
+					<!--статья блог-->
+					<div class="about__body">
+
+						<div class="about__content">
+							<h2 class="about__title">About us</h2>
+							<div class="about__text">
+								<p>We specialize in optimizing and automating processes in enterprises, helping to increase
+									their efficiency and reach new heights of success. Our company, with rich experience and deep
+									knowledge in the field of business processes, offers modern and innovative solutions that
+									will allow your company to be the first on the path to success.</p>
+								<p>Our main goal is to help you overcome difficulties and go beyond the standard framework by
+									radically improving and optimizing business processes. We strive to create an effective and
+									efficient organization that implements advanced technologies and innovations to achieve
+									business heights.</p>
+							</div>
+							<a href="#" class="about__button ">More <i class="icon-arrow"></i> </a>
+						</div>
+						<div class="about__images about__images-ibg ">
+							<picture><source srcset="img/about/01.webp" type="image/webp"><img src="img/about/01.jpg" alt="blog"></picture>
+						</div>
+
+					</div>
+					<div class="about__body">
+						<div class="about__content">
+							<h2 class="about__title">Team</h2>
+							<div class="about__text">
+								<p>Our team is our main key to achieving success. We are proud of the diversity of talented
+									professionals who work together to create innovative solutions and achieve results that
+									exceed expectations.</p>
+								<p>Our team is our main key to achieving success. We are proud of the diversity of talented
+									professionals who work together to create innovative solutions and achieve results that
+									exceed expectations.</p>
+							</div>
+							<a href="#" class="about__button ">Job <i class="icon-arrow"></i> </a>
+						</div>
+						<div class="about__images-ibg">
+							<picture><source srcset="img/about/02.webp" type="image/webp"><img src="img/about/02.jpg" alt="blog"></picture>
+						</div>
+
+					</div>
+				</div>
+			</section>
+			<div class="page__quotes quotes ">
+				<div data-watch class="quotes__container">
+					<blockquote class="quotes__body ">
+						<i class="quotes__icon-top icon-01"></i>
+
+						We are always very honest about working with customers. Therefore, we do not undertake projects that
+						we think have a low probability of implementation. But if we have undertaken it, then rest assured -
+						we will do everything possible and not possible to bring your task to an end.<i class="quotes__icon-bottom icon-02"></i>
+					</blockquote>
+					<div class="quotes__autor">Pavel Popov CEO “PAVEPO”</div>
+				</div>
+			</div>
+			<section class="page__directions directions">
+				<div class="directions__container">
+					<h2 class="directions__title">The main directions</h2>
+					<div class="directions__body">
+						<div class="directions__row">
+							<div class="directions__subtitle">Business process analysis</div>
+							<p class="directions__text">Conducting a detailed analysis of current business processes,
+								identifying
+								problem areas, and identifying potential for improvement.</p>
+							<a href="#" class="directions__button"> <i class="icon-arrow"></i></a>
+						</div>
+						<div class="directions__row">
+							<div class="directions__subtitle">Reaching new heights</div>
+							<p class="directions__text">We are looking for and implementing unique ways to help you achieve a
+								leading position in your industry.</p>
+							<a href="#" class="directions__button"> <i class="icon-arrow"></i></a>
+						</div>
+						<div class="directions__row">
+							<div class="directions__subtitle">Product development</div>
+							<p class="directions__text">We undertake full-fledged product development, turning your idea and
+								vision into reality.</p>
+							<a href="#" class="directions__button"> <i class="icon-arrow"></i></a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__line line">
+				<div class="line__container">
+					<div class="line__top top-line">
+
+						<h2 class="top-line__title">We love customers with extraordinary tasks more</h2>
+						<p class="top-line__text">Solving non—standard tasks is the engine of the industry and the driving
+							force of progress in the world.</p>
+						<a href="#" class="top-line__buttons"><span>Tell us about the task</span></a>
+					</div>
+					<div class="line__bottom bottom-line">
+						<div class="bottom-line__images">
+							<img class="bottom-line__img-line" src="img/line/line.svg" alt="line">
+							<img class="bottom-line__img-mobile" src="img/line/line02.svg" alt="line">
+							<picture><source srcset="img/line/01.webp" type="image/webp"><img class="bottom-line__decor" src="img/line/01.png" alt="decor"></picture>
+							<img class="bottom-line__decor" src="img/line/01.svg" alt="decor">
+							<img class="bottom-line__decor" src="img/line/01.svg" alt="decor">
+						</div>
+						<div class="bottom-line__colum-body">
+							<div data-watch class="bottom-line__colum bottom-line__colum--colum-one">
+								<h3 class="bottom-line__title">Discussion of your wishes <span>1</span></h3>
+								<p class="bottom-line__text">The most important thing for us is to understand what kind of
+									result
+									you want to get and offer a solution on how to make it even better.</p>
+
+							</div>
+							<div data-watch class="bottom-line__colum bottom-line__colum--colum-two">
+								<h3 class="bottom-line__title">Solution development<span>2</span></h3>
+								<p class="bottom-line__text">In the process, you regularly receive reports and observe how your
+									idea begins to emerge.</p>
+
+							</div>
+							<div data-watch class="bottom-line__colum bottom-line__colum--colum-thea">
+								<h3 class="bottom-line__title">Achieving your goal<span>3</span></h3>
+								<p class="bottom-line__text">We will help him get up every time he falls, so that he can then
+									move
+									on his own.</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__contact contact">
+				<div class="contact__container">
+					<div class="contact__title">Contact us</div>
+					<form data-ajax class="contact__form" action="files/sendmail/sendmail.php" method="POST">
+
+						<div class="contact__top">
+
+							<div class="contact__body-email"> <input data-error="Введен не верный E-mail" data-required="email" id="email-21" type="text" name="form[email]" data-error="Error" placeholder="contact@pavepo.com" class="input">
+								<div class="options">
+									<div class="options__item">
+										<input id="o_1" class="options__input" checked type="radio" value="1" name="option">
+										<label for="o_1" class="options__label"><span class="options__text">Email</span></label>
+									</div>
+									<div class="options__item">
+										<input id="o_2" class="options__input" type="radio" value="2" name="option">
+										<label for="o_2" class="options__label"><span class="options__text">Telegram</span></label>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="contact__body-name"><input data-required autocomplete="off" type="text" name="form[name]" data-error="Ошибка" placeholder="Paul" class="input">
+								<label>Name</label>
+							</div>
+
+
+
+							<div class="contact__body-company"><input data-required autocomplete="off" type="text" name="form[company]" data-error="Ошибка" placeholder="PAVEPO.COM" class="input">
+								<label>Company site</label>
+							</div>
+						</div>
+
+						<div class="contact__bottom">
+							<div class="contact__body-question">
+								<input data-required autocomplete="off" type="text" name="form[text]" data-error="Ошибка" placeholder="How to move the planet in the right direction even faster?" class="input">
+								<label>Describe the question</label>
+							</div>
+							<button type="submit" class="contact__button">Send</button>
+						</div>
+
+
+
+					</form>
+				</div>
+			</section>
+
+
+			<section class="page__questions questions">
+				<div class="questions__container">
+					<div class="questions__colum-left colum-left-questions">
+						<h2 class="colum-left-questions__title">Frequent questions</h2>
+						<p class="colum-left-questions__text">Here you can find information on the most common questions. You
+							can ask us a question <a href="#">Here</a> </p>
+					</div>
+					<div data-spollers class="questions__spoilers spollers">
+						<div class="spollers__item">
+							<div type="button" data-spoller class="spollers__title">What results can be expected from
+								optimizing business processes?</div>
+
+							<div class="spollers__body">We have successful experience working with various organizations in
+								different industries. Our agency has proven expertise in the field of analysis, strategy
+								development and implementation of optimized business processes. We are ready to provide
+								references and results of past projects.</div>
+							<div class="rer"></div>
+							</p>
+						</div>
+
+						<div class="spollers__item">
+							<div type="button" data-spoller class="spollers__title">What will be the cost of optimizing
+								business processes?</div>
+
+							<div class="spollers__body">We have successful experience working with various organizations in
+								different industries. Our agency has proven expertise in the field of analysis, strategy
+								development and implementation of optimized business processes. We are ready to provide
+								references and results of past projects.</div>
+							<div class="rer"></div>
+							</p>
+						</div>
+
+						<div class="spollers__item">
+							<div type="button" data-spoller class="spollers__title">How long will the optimization process
+								take?</div>
+
+							<div class="spollers__body">We have successful experience working with various organizations in
+								different industries. Our agency has proven expertise in the field of analysis, strategy
+								development and implementation of optimized business processes. We are ready to provide
+								references and results of past projects.</div>
+							<div class="rer"></div>
+							</p>
+						</div>
+						<div class="spollers__item">
+							<div type="button" data-spoller class="spollers__title">What are the risks associated with
+								optimizing business processes?</div>
+
+							<div class="spollers__body">We have successful experience working with various organizations in
+								different industries. Our agency has proven expertise in the field of analysis, strategy
+								development and implementation of optimized business processes. We are ready to provide
+								references and results of past projects.</div>
+							<div class="rer"></div>
+							</p>
+						</div>
+
+						<div class="spollers__item">
+							<div type="button" data-spoller class="spollers__title">What successes and experience does your
+								agency have in optimizing business processes?</div>
+
+							<div class="spollers__body">We have successful experience working with various organizations in
+								different industries. Our agency has proven expertise in the field of analysis, strategy
+								development and implementation of optimized business processes. We are ready to provide
+								references and results of past projects.</div>
+							<div class="rer"></div>
+							</p>
+						</div>
+
+					</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__logo">
+					<img src="img/logo/logo.svg" alt="logo">
+				</div>
+				<div class="footer__sochial-colum">
+					<a href="#" class="footer__sochial">Twitter</a>
+					<a href="#" class="footer__sochial">Telegram</a>
+					<a href="#" class="footer__sochial">Instagram</a>
+					<a href="#" class="footer__sochial">Vk</a>
+					<a href="#" class="footer__sochial">Privacy</a>
+					<a href="#" class="footer__sochial">Policy</a>
+				</div>
+				<div class="footer__email">
+					For additional questions
+					<a href="mailto:contact@pavepo.com">
+						contact@pavepo.com
+					</a>
+				</div>
+
+				<div class="footer__buttons">
+					<a data-popup="#popup-contact" href="#" class="footer__button">Contact us</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20240115210347"></script>
+</body>
+
+</html>

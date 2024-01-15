@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240115210347">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header data-scroll="320" class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+
+					<a href="#" class="header__logo"><img src="img/logo/logo.svg" alt="logo"></a>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="#" class="menu__link">About us</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Services</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Job</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Contact </a></li>
+							<li class="menu__item"><a href="#" class="menu__link">News</a></li>
+						</ul>
+					</nav>
+					<div class="menu__buttons buttons-menu">
+						<div data-da=".menu__body, 767.98" class="buttons-menu__language">
+							<a href="#" class="buttons-menu__rus">Rus</a>
+							<a href="#" class="buttons-menu__Eng">Eng</a>
+						</div>
+						<a data-popup="#popup-login" href="#" class="buttons-menu__login">Log in</a>
+					</div>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<main class="page ">
+			<div class="page__quotes quotes  page__quotes--margin">
+				<div data-watch class="quotes__container">
+					<blockquote class="quotes__body ">
+						<i class="quotes__icon-top icon-01"></i>
+
+						We are always very honest about working with customers. Therefore, we do not undertake projects that
+						we think have a low probability of implementation. But if we have undertaken it, then rest assured -
+						we will do everything possible and not possible to bring your task to an end.<i class="quotes__icon-bottom icon-02"></i>
+					</blockquote>
+					<div class="quotes__autor">Pavel Popov CEO “PAVEPO”</div>
+				</div>
+			</div>
+			<div class="page__team team">
+				<div class="team__container">
+
+					<p data-watch class="team__text">The PAVEPO team is a team of experts in the field of business process
+						optimization,
+						ready to bring new levels of efficiency and success to your company.</p>
+					<p data-watch class="team__text">Our business process optimization specialists have extensive experience
+						in various
+						industries and a deep understanding of the complexities that companies face in their daily work. We do
+						not just offer template solutions, but research, analyze and develop an individual approach for each
+						client.</p>
+					<p data-watch class="team__text">Our team brings together highly qualified business process specialists,
+						analysts,
+						consultants and developers working closely together to offer you the most complete and effective
+						solution. We pay special attention to details such as data analysis, process modeling, choosing the
+						best technology and implementing changes.</p>
+					<p data-watch class="team__text">We strive for long-term partnerships with our clients based on mutual
+						trust and
+						success. We are proud to help companies with different scales and from different industries achieve
+						meaningful results, reduce costs and increase their competitiveness.</p>
+					<span data-watch class="team__uper">TEAM</span>
+				</div>
+			</div>
+			<section class="page__values values">
+				<div data-watch class="values__container">
+					<h2 class="values__title">VALUES</h2>
+					<div class="values__body">
+						<div class="values__row">
+							<h3 class="values__subtitle">Courage</h3>
+							<p class="values__text">We strive for long-term partnerships with </p>
+						</div>
+						<div class="values__row">
+							<h3 class="values__subtitle">Perseverance</h3>
+							<p class="values__text">We strive for long-term partnerships with </p>
+						</div>
+						<div class="values__row">
+							<h3 class="values__subtitle">Reliability</h3>
+							<p class="values__text">We strive for long-term partnerships with </p>
+						</div>
+						<div class="values__row">
+							<h3 class="values__subtitle">responsibility</h3>
+							<p class="values__text">We strive for long-term partnerships with </p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+			<section class="page__contact contact">
+				<div class="contact__container">
+					<div class="contact__title">Contact us</div>
+					<form data-ajax class="contact__form" action="files/sendmail/sendmail.php" method="POST">
+
+						<div class="contact__top">
+
+							<div class="contact__body-email"> <input data-error="Введен не верный E-mail" data-required="email" id="email-21" type="text" name="form[email]" data-error="Error" placeholder="contact@pavepo.com" class="input">
+								<div class="options">
+									<div class="options__item">
+										<input id="o_1" class="options__input" checked type="radio" value="1" name="option">
+										<label for="o_1" class="options__label"><span class="options__text">Email</span></label>
+									</div>
+									<div class="options__item">
+										<input id="o_2" class="options__input" type="radio" value="2" name="option">
+										<label for="o_2" class="options__label"><span class="options__text">Telegram</span></label>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="contact__body-name"><input data-required autocomplete="off" type="text" name="form[name]" data-error="Ошибка" placeholder="Paul" class="input">
+								<label>Name</label>
+							</div>
+
+
+
+							<div class="contact__body-company"><input data-required autocomplete="off" type="text" name="form[company]" data-error="Ошибка" placeholder="PAVEPO.COM" class="input">
+								<label>Company site</label>
+							</div>
+						</div>
+
+						<div class="contact__bottom">
+							<div class="contact__body-question">
+								<input data-required autocomplete="off" type="text" name="form[text]" data-error="Ошибка" placeholder="How to move the planet in the right direction even faster?" class="input">
+								<label>Describe the question</label>
+							</div>
+							<button type="submit" class="contact__button">Send</button>
+						</div>
+
+
+
+					</form>
+				</div>
+			</section>
+
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__logo">
+					<img src="img/logo/logo.svg" alt="logo">
+				</div>
+				<div class="footer__sochial-colum">
+					<a href="#" class="footer__sochial">Twitter</a>
+					<a href="#" class="footer__sochial">Telegram</a>
+					<a href="#" class="footer__sochial">Instagram</a>
+					<a href="#" class="footer__sochial">Vk</a>
+					<a href="#" class="footer__sochial">Privacy</a>
+					<a href="#" class="footer__sochial">Policy</a>
+				</div>
+				<div class="footer__email">
+					For additional questions
+					<a href="mailto:contact@pavepo.com">
+						contact@pavepo.com
+					</a>
+				</div>
+
+				<div class="footer__buttons">
+					<a data-popup="#popup-contact" href="#" class="footer__button">Contact us</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20240115210347"></script>
+</body>
+
+</html>
